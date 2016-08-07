@@ -19,6 +19,7 @@
 		527700231D56CBC100CC481F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = USState.xcodeproj/Info.plist; sourceTree = "<group>"; };
 		527700241D56CC4400CC481F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		527700251D56CC6500CC481F /* USState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USState.swift; sourceTree = "<group>"; };
+		5277002A1D56D19D00CC481F /* USState.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = USState.playground; sourceTree = "<group>"; };
 		5277FFF11D56CB3500CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277FFFF1D56CB5400CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +78,7 @@
 				527700211D56CBB000CC481F /* Sources */,
 				527700221D56CBB400CC481F /* Support */,
 				5277FFF21D56CB3500CC481F /* Products */,
+				5277002A1D56D19D00CC481F /* USState.playground */,
 				527700241D56CC4400CC481F /* LICENSE.md */,
 			);
 			sourceTree = "<group>";
