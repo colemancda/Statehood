@@ -51,7 +51,7 @@ private let _abbreviationsToStates: [String: USState] = {
 }()
 
 /// A U.S. state.
-public enum USState: String {
+public enum USState: String, CustomStringConvertible {
 
     #if swift(>=3)
 
@@ -391,6 +391,11 @@ public enum USState: String {
     /// The capital for `self`.
     public var capital: String {
         return _capitals[hashValue]
+    }
+
+    /// A textual representation of this instance.
+    public var description: String {
+        return rawValue
     }
 
     /// Creates a state from a case-insensitive abbreviation.
