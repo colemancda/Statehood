@@ -25,6 +25,12 @@
 //  THE SOFTWARE.
 //
 
+private let _abbreviations = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+                              "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+                              "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+                              "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+                              "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+
 /// A U.S. state.
 public enum USState: String {
 
@@ -333,5 +339,10 @@ public enum USState: String {
     case Wyoming = "Wyoming"
 
     #endif
+
+    /// The abbreviation for `self`.
+    public var abbreviation: String {
+        return _abbreviations[hashValue]
+    }
 
 }
