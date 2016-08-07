@@ -1,5 +1,5 @@
 //
-//  USState.swift
+//  State.swift
 //  Statehood
 //
 //  The MIT License (MIT)
@@ -42,16 +42,16 @@ private let _capitals = ["Montgomery",    "Juneau",    "Phoenix",     "Little Ro
                          "Pierre",        "Nashville", "Austin",      "Salt Lake City", "Montpelier",
                          "Richmond",      "Olympia",   "Charleston",  "Madison",        "Cheyenne"]
 
-private let _abbreviationsToStates: [String: USState] = {
-    var result = [String: USState]()
-    for state in USState.all {
+private let _abbreviationsToStates: [String: State] = {
+    var result = [String: State]()
+    for state in State.all {
         result[state.abbreviation] = state
     }
     return result
 }()
 
 /// A U.S. state.
-public enum USState: String, CustomStringConvertible {
+public enum State: String, CustomStringConvertible {
 
     #if swift(>=3)
 
