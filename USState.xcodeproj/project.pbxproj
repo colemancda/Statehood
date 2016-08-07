@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		525F97781D56E2AC0005E61B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		5277000C1D56CB6000CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527700191D56CB6A00CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527700231D56CBC100CC481F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = USState.xcodeproj/Info.plist; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 				527700221D56CBB400CC481F /* Support */,
 				5277FFF21D56CB3500CC481F /* Products */,
 				5277002A1D56D19D00CC481F /* USState.playground */,
+				525F97781D56E2AC0005E61B /* Package.swift */,
 				527700241D56CC4400CC481F /* LICENSE.md */,
 			);
 			sourceTree = "<group>";
@@ -822,6 +824,7 @@
 				527700061D56CB5400CC481F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		527700111D56CB6000CC481F /* Build configuration list for PBXNativeTarget "USState watchOS" */ = {
 			isa = XCConfigurationList;
@@ -830,6 +833,7 @@
 				527700131D56CB6000CC481F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5277001E1D56CB6A00CC481F /* Build configuration list for PBXNativeTarget "USState tvOS" */ = {
 			isa = XCConfigurationList;
@@ -838,6 +842,7 @@
 				527700201D56CB6A00CC481F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5277FFE91D56CB1F00CC481F /* Build configuration list for PBXProject "USState" */ = {
 			isa = XCConfigurationList;
@@ -855,6 +860,7 @@
 				5277FFF81D56CB3500CC481F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
