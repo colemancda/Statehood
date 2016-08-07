@@ -15,14 +15,14 @@
 
 /* Begin PBXFileReference section */
 		525F97781D56E2AC0005E61B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		5277000C1D56CB6000CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		527700191D56CB6A00CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		527700231D56CBC100CC481F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = USState.xcodeproj/Info.plist; sourceTree = "<group>"; };
+		5277000C1D56CB6000CC481F /* Statehood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Statehood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		527700191D56CB6A00CC481F /* Statehood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Statehood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		527700231D56CBC100CC481F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Statehood.xcodeproj/Info.plist; sourceTree = "<group>"; };
 		527700241D56CC4400CC481F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		527700251D56CC6500CC481F /* USState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USState.swift; sourceTree = "<group>"; };
-		5277002A1D56D19D00CC481F /* USState.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = USState.playground; sourceTree = "<group>"; };
-		5277FFF11D56CB3500CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5277FFFF1D56CB5400CC481F /* USState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5277002A1D56D19D00CC481F /* Statehood.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Statehood.playground; sourceTree = "<group>"; };
+		5277FFF11D56CB3500CC481F /* Statehood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Statehood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5277FFFF1D56CB5400CC481F /* Statehood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Statehood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				527700211D56CBB000CC481F /* Sources */,
 				527700221D56CBB400CC481F /* Support */,
 				5277FFF21D56CB3500CC481F /* Products */,
-				5277002A1D56D19D00CC481F /* USState.playground */,
+				5277002A1D56D19D00CC481F /* Statehood.playground */,
 				525F97781D56E2AC0005E61B /* Package.swift */,
 				527700241D56CC4400CC481F /* LICENSE.md */,
 			);
@@ -88,10 +88,10 @@
 		5277FFF21D56CB3500CC481F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5277FFF11D56CB3500CC481F /* USState.framework */,
-				5277FFFF1D56CB5400CC481F /* USState.framework */,
-				5277000C1D56CB6000CC481F /* USState.framework */,
-				527700191D56CB6A00CC481F /* USState.framework */,
+				5277FFF11D56CB3500CC481F /* Statehood.framework */,
+				5277FFFF1D56CB5400CC481F /* Statehood.framework */,
+				5277000C1D56CB6000CC481F /* Statehood.framework */,
+				527700191D56CB6A00CC481F /* Statehood.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5277000B1D56CB6000CC481F /* USState watchOS */ = {
+		5277000B1D56CB6000CC481F /* Statehood watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 527700111D56CB6000CC481F /* Build configuration list for PBXNativeTarget "USState watchOS" */;
+			buildConfigurationList = 527700111D56CB6000CC481F /* Build configuration list for PBXNativeTarget "Statehood watchOS" */;
 			buildPhases = (
 				527700071D56CB6000CC481F /* Sources */,
 				527700081D56CB6000CC481F /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = "USState watchOS";
+			name = "Statehood watchOS";
 			productName = "USState watchOS";
-			productReference = 5277000C1D56CB6000CC481F /* USState.framework */;
+			productReference = 5277000C1D56CB6000CC481F /* Statehood.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		527700181D56CB6A00CC481F /* USState tvOS */ = {
+		527700181D56CB6A00CC481F /* Statehood tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5277001E1D56CB6A00CC481F /* Build configuration list for PBXNativeTarget "USState tvOS" */;
+			buildConfigurationList = 5277001E1D56CB6A00CC481F /* Build configuration list for PBXNativeTarget "Statehood tvOS" */;
 			buildPhases = (
 				527700141D56CB6A00CC481F /* Sources */,
 				527700151D56CB6A00CC481F /* Frameworks */,
@@ -161,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = "USState tvOS";
+			name = "Statehood tvOS";
 			productName = "USState tvOS";
-			productReference = 527700191D56CB6A00CC481F /* USState.framework */;
+			productReference = 527700191D56CB6A00CC481F /* Statehood.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5277FFF01D56CB3500CC481F /* USState macOS */ = {
+		5277FFF01D56CB3500CC481F /* Statehood macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5277FFF91D56CB3500CC481F /* Build configuration list for PBXNativeTarget "USState macOS" */;
+			buildConfigurationList = 5277FFF91D56CB3500CC481F /* Build configuration list for PBXNativeTarget "Statehood macOS" */;
 			buildPhases = (
 				5277FFEC1D56CB3500CC481F /* Sources */,
 				5277FFED1D56CB3500CC481F /* Frameworks */,
@@ -179,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = "USState macOS";
+			name = "Statehood macOS";
 			productName = "USState macOS";
-			productReference = 5277FFF11D56CB3500CC481F /* USState.framework */;
+			productReference = 5277FFF11D56CB3500CC481F /* Statehood.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5277FFFE1D56CB5400CC481F /* USState iOS */ = {
+		5277FFFE1D56CB5400CC481F /* Statehood iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 527700041D56CB5400CC481F /* Build configuration list for PBXNativeTarget "USState iOS" */;
+			buildConfigurationList = 527700041D56CB5400CC481F /* Build configuration list for PBXNativeTarget "Statehood iOS" */;
 			buildPhases = (
 				5277FFFA1D56CB5400CC481F /* Sources */,
 				5277FFFB1D56CB5400CC481F /* Frameworks */,
@@ -197,9 +197,9 @@
 			);
 			dependencies = (
 			);
-			name = "USState iOS";
+			name = "Statehood iOS";
 			productName = "USState iOS";
-			productReference = 5277FFFF1D56CB5400CC481F /* USState.framework */;
+			productReference = 5277FFFF1D56CB5400CC481F /* Statehood.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5277FFE91D56CB1F00CC481F /* Build configuration list for PBXProject "USState" */;
+			buildConfigurationList = 5277FFE91D56CB1F00CC481F /* Build configuration list for PBXProject "Statehood" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -252,10 +252,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5277FFF01D56CB3500CC481F /* USState macOS */,
-				5277FFFE1D56CB5400CC481F /* USState iOS */,
-				5277000B1D56CB6000CC481F /* USState watchOS */,
-				527700181D56CB6A00CC481F /* USState tvOS */,
+				5277FFF01D56CB3500CC481F /* Statehood macOS */,
+				5277FFFE1D56CB5400CC481F /* Statehood iOS */,
+				5277000B1D56CB6000CC481F /* Statehood watchOS */,
+				527700181D56CB6A00CC481F /* Statehood tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -371,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -428,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -490,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -547,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -608,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -664,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -741,7 +741,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -798,7 +798,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/USState.xcodeproj/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Statehood.xcodeproj/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -817,7 +817,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		527700041D56CB5400CC481F /* Build configuration list for PBXNativeTarget "USState iOS" */ = {
+		527700041D56CB5400CC481F /* Build configuration list for PBXNativeTarget "Statehood iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				527700051D56CB5400CC481F /* Debug */,
@@ -826,7 +826,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		527700111D56CB6000CC481F /* Build configuration list for PBXNativeTarget "USState watchOS" */ = {
+		527700111D56CB6000CC481F /* Build configuration list for PBXNativeTarget "Statehood watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				527700121D56CB6000CC481F /* Debug */,
@@ -835,7 +835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5277001E1D56CB6A00CC481F /* Build configuration list for PBXNativeTarget "USState tvOS" */ = {
+		5277001E1D56CB6A00CC481F /* Build configuration list for PBXNativeTarget "Statehood tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5277001F1D56CB6A00CC481F /* Debug */,
@@ -844,7 +844,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5277FFE91D56CB1F00CC481F /* Build configuration list for PBXProject "USState" */ = {
+		5277FFE91D56CB1F00CC481F /* Build configuration list for PBXProject "Statehood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5277FFEA1D56CB1F00CC481F /* Debug */,
@@ -853,7 +853,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5277FFF91D56CB3500CC481F /* Build configuration list for PBXNativeTarget "USState macOS" */ = {
+		5277FFF91D56CB3500CC481F /* Build configuration list for PBXNativeTarget "Statehood macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5277FFF71D56CB3500CC481F /* Debug */,

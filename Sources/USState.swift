@@ -1,6 +1,6 @@
 //
 //  USState.swift
-//  USState
+//  Statehood
 //
 //  The MIT License (MIT)
 //

@@ -1,6 +1,6 @@
 //
 //  Package.swift
-//  USState
+//  Statehood
 //
 //  The MIT License (MIT)
 //
@@ -28,5 +28,5 @@
 import PackageDescription
 
 let package = Package(
-    name: "USState"
+    name: "Statehood"
 )
