@@ -31,6 +31,19 @@ private let _abbreviations = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "F
                               "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
                               "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
+private let _capitals = ["Montgomery",    "Juneau",    "Phoenix",     "Little Rock",    "Sacramento",
+                         "Denver",        "Hartford",  "Dover",       "Tallahassee",    "Atlanta",
+                         "Honolulu",      "Boise",     "Springfield", "Indianapolis",   "Des Moines",
+                         "Topeka",        "Frankfort", "Baton Rouge", "Augusta",        "Annapolis",
+                         "Boston",        "Lansing",   "St. Paul",    "Jackson",        "Jefferson City",
+                         "Helena",        "Lincoln",   "Carson City", "Concord",        "Trenton",
+                         "Santa Fe",      "Albany",    "Raleigh",     "Bismarck",       "Columbus",
+                         "Oklahoma City", "Salem",     "Harrisburg",  "Providence",     "Columbia",
+                         "Pierre",        "Nashville", "Austin",      "Salt Lake City", "Montpelier",
+                         "Richmond",      "Olympia",   "Charleston",  "Madison",        "Cheyenne"]
+
+
+
 /// A U.S. state.
 public enum USState: String {
 
@@ -367,6 +380,11 @@ public enum USState: String {
     /// The abbreviation for `self`.
     public var abbreviation: String {
         return _abbreviations[hashValue]
+    }
+
+    /// The capital for `self`.
+    public var capital: String {
+        return _capitals[hashValue]
     }
 
 }
