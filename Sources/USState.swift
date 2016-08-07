@@ -186,6 +186,18 @@ public enum USState: String {
     /// Wyoming.
     case wyoming = "Wyoming"
 
+    /// All states.
+    public static let all = [alabama, alaska, arizona, arkansas, california,
+                             colorado, connecticut, delaware, florida, georgia,
+                             hawaii, idaho, illinois, indiana, iowa,
+                             kansas, kentucky, louisiana, maine, maryland,
+                             massachusetts, michigan, minnesota, mississippi, missouri,
+                             montana, nebraska, nevada, newHampshire, newJersey,
+                             newMexico, newYork, northCarolina, northDakota, ohio,
+                             oklahoma, oregon, pennsylvania, rhodeIsland, southCarolina,
+                             southDakota, tennessee, texas, utah, vermont,
+                             virginia, washington, westVirginia, wisconsin, wyoming]
+
     #else
 
     /// Alabama.
@@ -337,6 +349,18 @@ public enum USState: String {
 
     /// Wyoming.
     case Wyoming = "Wyoming"
+
+    /// All states.
+    public static let all = [Alabama, Alaska, Arizona, Arkansas, California,
+                             Colorado, Connecticut, Delaware, Florida, Georgia,
+                             Hawaii, Idaho, Illinois, Indiana, Iowa,
+                             Kansas, Kentucky, Louisiana, Maine, Maryland,
+                             Massachusetts, Michigan, Minnesota, Mississippi, Missouri,
+                             Montana, Nebraska, Nevada, NewHampshire, NewJersey,
+                             NewMexico, NewYork, NorthCarolina, NorthDakota, Ohio,
+                             Oklahoma, Oregon, Pennsylvania, RhodeIsland, SouthCarolina,
+                             SouthDakota, Tennessee, Texas, Utah, Vermont,
+                             Virginia, Washington, WestVirginia, Wisconsin, Wyoming]
 
     #endif
 
