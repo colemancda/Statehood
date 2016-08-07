@@ -149,34 +149,34 @@ public enum USState: String {
 
     /// South Carolina.
     case southCarolina = "South Carolin"
-    
+
     /// South Dakota.
     case southDakota = "South Dakota"
-    
+
     /// Tennessee.
     case tennessee = "Tennessee"
-    
+
     /// Texas.
     case texas = "Texas"
-    
+
     /// Utah.
     case utah = "Utah"
-    
+
     /// Vermont.
     case vermont = "Vermont"
-    
+
     /// Virginia.
     case virginia = "Virginia"
-    
+
     /// Washington.
     case washington = "Washington"
-    
+
     /// West Virginia.
     case westVirginia = "West Virginia"
-    
+
     /// Wisconsin.
     case wisconsin = "Wisconsin"
-    
+
     /// Wyoming.
     case wyoming = "Wyoming"
 
@@ -301,34 +301,34 @@ public enum USState: String {
 
     /// South Carolina.
     case SouthCarolina = "South Carolina"
-    
+
     /// South Dakota.
     case SouthDakota = "South Dakota"
-    
+
     /// Tennessee.
     case Tennessee = "Tennessee"
-    
+
     /// Texas.
     case Texas = "Texas"
-    
+
     /// Utah.
     case Utah = "Utah"
-    
+
     /// Vermont.
     case Vermont = "Vermont"
-    
+
     /// Virginia.
     case Virginia = "Virginia"
-    
+
     /// Washington.
     case Washington = "Washington"
-    
+
     /// West Virginia.
     case WestVirginia = "West Virginia"
-    
+
     /// Wisconsin.
     case Wisconsin = "Wisconsin"
-    
+
     /// Wyoming.
     case Wyoming = "Wyoming"
 
