@@ -400,6 +400,9 @@ public enum USState: String, CustomStringConvertible {
 
     /// Creates a state from a case-insensitive abbreviation.
     public init?(abbreviation: String) {
+        guard abbreviation.characters.count == 2 else {
+            return nil
+        }
         #if swift(>=3)
             let key = abbreviation.uppercased()
         #else
