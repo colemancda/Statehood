@@ -42,7 +42,13 @@ private let _capitals = ["Montgomery",    "Juneau",    "Phoenix",     "Little Ro
                          "Pierre",        "Nashville", "Austin",      "Salt Lake City", "Montpelier",
                          "Richmond",      "Olympia",   "Charleston",  "Madison",        "Cheyenne"]
 
-
+private let _abbreviationsToStates: [String: USState] = {
+    var result = [String: USState]()
+    for state in USState.all {
+        result[state.abbreviation] = state
+    }
+    return result
+}()
 
 /// A U.S. state.
 public enum USState: String {
@@ -385,6 +391,19 @@ public enum USState: String {
     /// The capital for `self`.
     public var capital: String {
         return _capitals[hashValue]
+    }
+
+    /// Creates a state from a case-insensitive abbreviation.
+    public init?(abbreviation: String) {
+        #if swift(>=3)
+            let key = abbreviation.uppercased()
+        #else
+            let key = abbreviation.uppercaseString
+        #endif
+        guard let state = _abbreviationsToStates[key] else {
+            return nil
+        }
+        self = state
     }
 
 }
