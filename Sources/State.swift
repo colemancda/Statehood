@@ -152,7 +152,7 @@ public enum State: String, CustomStringConvertible {
     case newYork = "New York"
 
     /// North Carolina.
-    case northCarolina = "North Carolin"
+    case northCarolina = "North Carolina"
 
     /// North Dakota.
     case northDakota = "North Dakota"
@@ -173,7 +173,7 @@ public enum State: String, CustomStringConvertible {
     case rhodeIsland = "Rhode Island"
 
     /// South Carolina.
-    case southCarolina = "South Carolin"
+    case southCarolina = "South Carolina"
 
     /// South Dakota.
     case southDakota = "South Dakota"
