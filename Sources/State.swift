@@ -25,186 +25,213 @@
 //  THE SOFTWARE.
 //
 
-private let _abbreviations = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
-                              "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
-                              "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
-                              "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
-                              "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+#if swift(>=4.2)
+    private let _abbreviations: Dictionary<States, String> = [.alabama: "AL",       .alaska: "AK",      .arizona: "AZ",       .arkansas: "AR",     .california: "CA",
+                                                              .colorado: "CO",      .connecticut: "CT", .delaware: "DE",      .florida: "FL",      .georgia: "GA",
+                                                              .hawaii: "HI",        .idaho: "ID",       .illinois: "IL",      .indiana: "IN",      .iowa: "IA",
+                                                              .kansas: "KS",        .kentucky: "KY",    .louisiana: "LA",     .maine: "ME",        .maryland: "MD",
+                                                              .massachusetts: "MA", .michigan: "MI",    .minnesota: "MN",     .mississippi: "MS",  .missouri: "MO",
+                                                              .montana: "MT",       .nebraska: "NE",    .nevada: "NV",        .newHampshire: "NH", .newJersey: "NJ",
+                                                              .newMexico: "NM",     .newYork: "NY",     .northCarolina: "NC", .northDakota: "ND",  .ohio: "OH",
+                                                              .oklahoma: "OK",      .oregon: "OR",      .pennsylvania: "PA",  .rhodeIsland: "RI",  .southCarolina: "SC",
+                                                              .southDakota: "SD",   .tennessee: "TN",   .texas: "TX",         .utah: "UT",         .vermont: "VT",
+                                                              .virginia: "VA",      .washington: "WA",  .westVirginia: "WV",  .wisconsin: "WI",    .wyoming: "WY"]
 
-private let _capitals = ["Montgomery",    "Juneau",    "Phoenix",     "Little Rock",    "Sacramento",
-                         "Denver",        "Hartford",  "Dover",       "Tallahassee",    "Atlanta",
-                         "Honolulu",      "Boise",     "Springfield", "Indianapolis",   "Des Moines",
-                         "Topeka",        "Frankfort", "Baton Rouge", "Augusta",        "Annapolis",
-                         "Boston",        "Lansing",   "St. Paul",    "Jackson",        "Jefferson City",
-                         "Helena",        "Lincoln",   "Carson City", "Concord",        "Trenton",
-                         "Santa Fe",      "Albany",    "Raleigh",     "Bismarck",       "Columbus",
-                         "Oklahoma City", "Salem",     "Harrisburg",  "Providence",     "Columbia",
-                         "Pierre",        "Nashville", "Austin",      "Salt Lake City", "Montpelier",
-                         "Richmond",      "Olympia",   "Charleston",  "Madison",        "Cheyenne"]
+    private let _capitals: Dictionary<States, String> = [.alabama: "Montgomery",      .alaska: "Juneau",           .arizona: "Phoenix",        .arkansas: "Little Rock",
+                                                         .california: "Sacramento",   .colorado: "Denver",         .connecticut: "Hartford",   .delaware: "Dover",
+                                                         .florida: "Tallahassee",     .georgia: "Atlanta",         .hawaii: "Honolulu",        .idaho: "Boise",
+                                                         .illinois: "Springfield",    .indiana: "Indianapolis",    .iowa: "Des Moines",        .kansas: "Topeka",
+                                                         .kentucky: "Frankfort",      .louisiana: "Baton Rouge",   .maine: "Augusta",          .maryland: "Annapolis",
+                                                         .massachusetts: "Boston",    .michigan: "Lansing",        .minnesota: "St. Paul",     .mississippi: "Jackson",
+                                                         .missouri: "Jefferson City", .montana: "Helena",          .nebraska: "Lincoln",       .nevada: "Carson City",
+                                                         .newHampshire: "Concord",    .newJersey: "Trenton",       .newMexico: "Santa Fe",     .newYork: "Albany",
+                                                         .northCarolina: "Raleigh",   .northDakota: "Bismarck",    .ohio: "Columbus",          .oklahoma: "Oklahoma City",
+                                                         .oregon: "Salem",            .pennsylvania: "Harrisburg", .rhodeIsland: "Providence", .southCarolina: "Columbia",
+                                                         .southDakota: "Pierre",      .tennessee: "Nashville",     .texas: "Austin",           .utah: "Salt Lake City",
+                                                         .vermont: "Montpelier",      .virginia: "Richmond",       .washington: "Olympia",     .westVirginia: "Charleston",
+                                                         .wisconsin: "Madison",       .wyoming: "Cheyenne"]
+#else
+    private let _abbreviations = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+                                  "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+                                  "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+                                  "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+                                  "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
-private let _abbreviationsToStates: [String: State] = {
-    var result = [String: State]()
-    for state in State.all {
+    private let _capitals = ["Montgomery",    "Juneau",    "Phoenix",     "Little Rock",    "Sacramento",
+                             "Denver",        "Hartford",  "Dover",       "Tallahassee",    "Atlanta",
+                             "Honolulu",      "Boise",     "Springfield", "Indianapolis",   "Des Moines",
+                             "Topeka",        "Frankfort", "Baton Rouge", "Augusta",        "Annapolis",
+                             "Boston",        "Lansing",   "St. Paul",    "Jackson",        "Jefferson City",
+                             "Helena",        "Lincoln",   "Carson City", "Concord",        "Trenton",
+                             "Santa Fe",      "Albany",    "Raleigh",     "Bismarck",       "Columbus",
+                             "Oklahoma City", "Salem",     "Harrisburg",  "Providence",     "Columbia",
+                             "Pierre",        "Nashville", "Austin",      "Salt Lake City", "Montpelier",
+                             "Richmond",      "Olympia",   "Charleston",  "Madison",        "Cheyenne"]
+#endif
+
+private let _abbreviationsToStates: [String: States] = {
+    var result = [String: States]()
+    for state in States.all {
         result[state.abbreviation] = state
     }
     return result
 }()
 
 /// A U.S. state.
-public enum State: String, CustomStringConvertible {
-
+public enum States: String, CustomStringConvertible, CaseIterable {
+    
     #if swift(>=3)
-
+    
     /// Alabama.
     case alabama = "Alabama"
-
+    
     /// Alaska.
     case alaska = "Alaska"
-
+    
     /// Arizona.
     case arizona = "Arizona"
-
+    
     /// Arkansas.
     case arkansas = "Arkansas"
-
+    
     /// California.
     case california = "California"
-
+    
     /// Colorado.
     case colorado = "Colorado"
-
+    
     /// Connecticut.
     case connecticut = "Connecticut"
-
+    
     /// Delaware.
     case delaware = "Delaware"
-
+    
     /// Florida.
     case florida = "Florida"
-
+    
     /// Georgia.
     case georgia = "Georgia"
-
+    
     /// Hawaii.
     case hawaii = "Hawaii"
-
+    
     /// Idaho.
     case idaho = "Idaho"
-
+    
     /// Illinois.
     case illinois = "Illinois"
-
+    
     /// Indiana.
     case indiana = "Indiana"
-
+    
     /// Iowa.
     case iowa = "Iowa"
-
+    
     /// Kansas.
     case kansas = "Kansas"
-
+    
     /// Kentucky.
     case kentucky = "Kentucky"
-
+    
     /// Louisiana.
     case louisiana = "Louisiana"
-
+    
     /// Maine.
     case maine = "Maine"
-
+    
     /// Maryland.
     case maryland = "Maryland"
-
+    
     /// Massachusetts.
     case massachusetts = "Massachusetts"
-
+    
     /// Michigan.
     case michigan = "Michigan"
-
+    
     /// Minnesota.
     case minnesota = "Minnesota"
-
+    
     /// Mississippi.
     case mississippi = "Mississippi"
-
+    
     /// Missouri.
     case missouri = "Missouri"
-
+    
     /// Montana.
     case montana = "Montana"
-
+    
     /// Nebraska.
     case nebraska = "Nebraska"
-
+    
     /// Nevada.
     case nevada = "Nevada"
-
+    
     /// New Hampshire.
     case newHampshire = "New Hampshire"
-
+    
     /// New Jersey.
     case newJersey = "New Jersey"
-
+    
     /// New Mexico.
     case newMexico = "New Mexico"
-
+    
     /// New York.
     case newYork = "New York"
-
+    
     /// North Carolina.
-    case northCarolina = "North Carolin"
-
+    case northCarolina = "North Carolina"
+    
     /// North Dakota.
     case northDakota = "North Dakota"
-
+    
     /// Ohio.
     case ohio = "Ohio"
-
+    
     /// Oklahoma.
     case oklahoma = "Oklahoma"
-
+    
     /// Oregon.
     case oregon = "Oregon"
-
+    
     /// Pennsylvania.
     case pennsylvania = "Pennsylvania"
-
+    
     /// Rhode Island.
     case rhodeIsland = "Rhode Island"
-
+    
     /// South Carolina.
-    case southCarolina = "South Carolin"
-
+    case southCarolina = "South Carolina"
+    
     /// South Dakota.
     case southDakota = "South Dakota"
-
+    
     /// Tennessee.
     case tennessee = "Tennessee"
-
+    
     /// Texas.
     case texas = "Texas"
-
+    
     /// Utah.
     case utah = "Utah"
-
+    
     /// Vermont.
     case vermont = "Vermont"
-
+    
     /// Virginia.
     case virginia = "Virginia"
-
+    
     /// Washington.
     case washington = "Washington"
-
+    
     /// West Virginia.
     case westVirginia = "West Virginia"
-
+    
     /// Wisconsin.
     case wisconsin = "Wisconsin"
-
+    
     /// Wyoming.
     case wyoming = "Wyoming"
-
+    
     /// All states.
     public static let all = [alabama, alaska, arizona, arkansas, california,
                              colorado, connecticut, delaware, florida, georgia,
@@ -216,202 +243,212 @@ public enum State: String, CustomStringConvertible {
                              oklahoma, oregon, pennsylvania, rhodeIsland, southCarolina,
                              southDakota, tennessee, texas, utah, vermont,
                              virginia, washington, westVirginia, wisconsin, wyoming]
-
+    
     #else
-
+    
     /// Alabama.
     case Alabama = "Alabama"
-
+    
     /// Alaska.
     case Alaska = "Alaska"
-
+    
     /// Arizona.
     case Arizona = "Arizona"
-
+    
     /// Arkansas.
     case Arkansas = "Arkansas"
-
+    
     /// California.
     case California = "California"
-
+    
     /// Colorado.
     case Colorado = "Colorado"
-
+    
     /// Connecticut.
     case Connecticut = "Connecticut"
-
+    
     /// Delaware.
     case Delaware = "Delaware"
-
+    
     /// Florida.
     case Florida = "Florida"
-
+    
     /// Georgia.
     case Georgia = "Georgia"
-
+    
     /// Hawaii.
     case Hawaii = "Hawaii"
-
+    
     /// Idaho.
     case Idaho = "Idaho"
-
+    
     /// Illinois.
     case Illinois = "Illinois"
-
+    
     /// Indiana.
     case Indiana = "Indiana"
-
+    
     /// Iowa.
     case Iowa = "Iowa"
-
+    
     /// Kansas.
     case Kansas = "Kansas"
-
+    
     /// Kentucky.
     case Kentucky = "Kentucky"
-
+    
     /// Louisiana.
     case Louisiana = "Louisiana"
-
+    
     /// Maine.
     case Maine = "Maine"
-
+    
     /// Maryland.
     case Maryland = "Maryland"
-
+    
     /// Massachusetts.
     case Massachusetts = "Massachusetts"
-
+    
     /// Michigan.
     case Michigan = "Michigan"
-
+    
     /// Minnesota.
     case Minnesota = "Minnesota"
-
+    
     /// Mississippi.
     case Mississippi = "Mississippi"
-
+    
     /// Missouri.
     case Missouri = "Missouri"
-
+    
     /// Montana.
     case Montana = "Montana"
-
+    
     /// Nebraska.
     case Nebraska = "Nebraska"
-
+    
     /// Nevada.
     case Nevada = "Nevada"
-
+    
     /// New Hampshire.
     case NewHampshire = "New Hampshire"
-
+    
     /// New Jersey.
     case NewJersey = "New Jersey"
-
+    
     /// New Mexico.
     case NewMexico = "New Mexico"
-
+    
     /// New York.
     case NewYork = "New York"
-
+    
     /// North Carolina.
     case NorthCarolina = "North Carolina"
-
+    
     /// North Dakota.
     case NorthDakota = "North Dakota"
-
+    
     /// Ohio.
     case Ohio = "Ohio"
-
+    
     /// Oklahoma.
     case Oklahoma = "Oklahoma"
-
+    
     /// Oregon.
     case Oregon = "Oregon"
-
+    
     /// Pennsylvania.
     case Pennsylvania = "Pennsylvania"
-
+    
     /// Rhode Island.
     case RhodeIsland = "Rhode Island"
-
+    
     /// South Carolina.
     case SouthCarolina = "South Carolina"
-
+    
     /// South Dakota.
     case SouthDakota = "South Dakota"
-
+    
     /// Tennessee.
     case Tennessee = "Tennessee"
-
+    
     /// Texas.
     case Texas = "Texas"
-
+    
     /// Utah.
     case Utah = "Utah"
-
+    
     /// Vermont.
     case Vermont = "Vermont"
-
+    
     /// Virginia.
     case Virginia = "Virginia"
-
+    
     /// Washington.
     case Washington = "Washington"
-
+    
     /// West Virginia.
     case WestVirginia = "West Virginia"
-
+    
     /// Wisconsin.
     case Wisconsin = "Wisconsin"
-
+    
     /// Wyoming.
     case Wyoming = "Wyoming"
-
+    
     /// All states.
     public static let all = [Alabama, Alaska, Arizona, Arkansas, California,
-                             Colorado, Connecticut, Delaware, Florida, Georgia,
-                             Hawaii, Idaho, Illinois, Indiana, Iowa,
-                             Kansas, Kentucky, Louisiana, Maine, Maryland,
-                             Massachusetts, Michigan, Minnesota, Mississippi, Missouri,
-                             Montana, Nebraska, Nevada, NewHampshire, NewJersey,
-                             NewMexico, NewYork, NorthCarolina, NorthDakota, Ohio,
-                             Oklahoma, Oregon, Pennsylvania, RhodeIsland, SouthCarolina,
-                             SouthDakota, Tennessee, Texas, Utah, Vermont,
-                             Virginia, Washington, WestVirginia, Wisconsin, Wyoming]
-
+    Colorado, Connecticut, Delaware, Florida, Georgia,
+    Hawaii, Idaho, Illinois, Indiana, Iowa,
+    Kansas, Kentucky, Louisiana, Maine, Maryland,
+    Massachusetts, Michigan, Minnesota, Mississippi, Missouri,
+    Montana, Nebraska, Nevada, NewHampshire, NewJersey,
+    NewMexico, NewYork, NorthCarolina, NorthDakota, Ohio,
+    Oklahoma, Oregon, Pennsylvania, RhodeIsland, SouthCarolina,
+    SouthDakota, Tennessee, Texas, Utah, Vermont,
+    Virginia, Washington, WestVirginia, Wisconsin, Wyoming]
+    
     #endif
-
+    
     /// The abbreviation for `self`.
     public var abbreviation: String {
-        return _abbreviations[hashValue]
+        #if swift(>=4.2)
+            return _abbreviations[self] ?? ""
+        #else
+            return _abbreviations[hashValue]
+        #endif
     }
-
+    
     /// The capital for `self`.
     public var capital: String {
-        return _capitals[hashValue]
+        #if swift(>=4.2)
+            return _capitals[self] ?? ""
+        #else
+            return _capitals[hashValue]
+        #endif
     }
-
+    
     /// A textual representation of this instance.
     public var description: String {
         return rawValue
     }
-
+    
     /// Creates a state from a case-insensitive abbreviation.
     public init?(abbreviation: String) {
-        guard abbreviation.characters.count == 2 else {
-            return nil
-        }
+        #if swift(>=4)
+            guard abbreviation.count == 2 else { return nil }
+        #else
+            guard abbreviation.characters.count == 2 else { return nil }
+        #endif
+        
         #if swift(>=3)
             let key = abbreviation.uppercased()
         #else
             let key = abbreviation.uppercaseString
         #endif
-        guard let state = _abbreviationsToStates[key] else {
-            return nil
-        }
+        
+        guard let state = _abbreviationsToStates[key] else { return nil }
         self = state
     }
-
+    
 }
